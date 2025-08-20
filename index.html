@@ -17,6 +17,9 @@
             background-color: #0a0a0a;
             color: #f5f5f5;
             line-height: 1.6;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(212, 175, 55, 0.03) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(212, 175, 55, 0.03) 0%, transparent 20%);
         }
 
         .container {
@@ -503,6 +506,15 @@
             100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
         }
 
+        .price-container {
+            background: rgba(30, 30, 30, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid #d4af37;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
         .price-original {
             text-decoration: line-through;
             color: #999;
@@ -739,20 +751,6 @@
         }
 
         /* Islamic Pattern Background */
-        .pattern-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: 
-                radial-gradient(circle at 10% 20%, rgba(212, 175, 55, 0.03) 0%, transparent 20%),
-                radial-gradient(circle at 90% 80%, rgba(212, 175, 55, 0.03) 0%, transparent 20%);
-            z-index: -1;
-            pointer-events: none;
-        }
-
-        /* Ornamental Elements */
         .ornament {
             position: absolute;
             color: rgba(212, 175, 55, 0.1);
@@ -767,8 +765,7 @@
     </style>
 </head>
 <body>
-    <!-- Background Pattern -->
-    <div class="pattern-bg"></div>
+    <!-- Ornamental Elements -->
     <div class="ornament ornament-1">✦</div>
     <div class="ornament ornament-2">✦</div>
     <div class="ornament ornament-3">✦</div>
@@ -1028,10 +1025,12 @@
     <section class="pricing-section">
         <div class="container">
             <div class="promo-badge">PROMO SPESIAL HARI INI</div>
-            <p>Dapatkan Diskon Spesial Untuk Hari Ini Saja, Harga Akan Kembali Normal Setelah:</p>
-            <div class="price-promo">Rp. 225.000</div>
-            <div class="price-original">Rp. 337.500</div>
-            <div class="price-savings">Anda Hemat Rp. 112.500 (33% OFF)</div>
+            <div class="price-container">
+                <p>Dapatkan Diskon Spesial Untuk Hari Ini Saja, Harga Akan Kembali Normal Setelah:</p>
+                <div class="price-promo">Rp. 225.000</div>
+                <div class="price-original">Rp. 337.500</div>
+                <div class="price-savings">Anda Hemat Rp. 112.500 (33% OFF)</div>
+            </div>
         </div>
     </section>
 
@@ -1049,7 +1048,7 @@
             <h2 class="form-title">Form Pemesanan Eksklusif</h2>
             <div class="form-container">
                 <div class="ooef">
-                    <form class="orderonline-embed-form" data-username="emma" data-product-slug="76vgrdf" data-product-id="68a5c131a956cc1e9a05c54c" id="oo-embed-form-76vgrdf-4984" data-origin="orderonline">
+                    <form class="orderonline-embed-form" data-username="emma" data-product-slug="76vgrdf" data-product-id="68a5c131a956cc1e9a05c54c" id="oo-embed-form-76vgrdf-9364" data-origin="orderonline">
                         <div class="ooef-loader">
                             <style>
                                 .ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}
@@ -1158,7 +1157,7 @@
             }
             xEmbedInit(window);
             ooe('setup', 'redirect', 'https://emma.orderonline.id');
-            ooe('init', '5f16831a9d8e8e4fb67472e5', '68a5c131a956cc1e9a05c54c', null, 'oo-embed-form-76vgrdf-4984', {"mode":"popup","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false});
+            ooe('init', '5f16831a9d8e8e4fb67472e5', '68a5c131a956cc1e9a05c54c', null, 'oo-embed-form-76vgrdf-9364', {"mode":"popup","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false});
             if (!window.jQuery) {
                 !function(w, d, e, v, id, t, s) {
                     if (d.getElementById(id)) return;
